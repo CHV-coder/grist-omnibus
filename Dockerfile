@@ -35,6 +35,7 @@ FROM $BASE as merge
 # others. You may override it, e.g. "unsandboxed" uses no sandboxing but is
 # only OK if you trust all users fully.
 ENV GRIST_SANDBOX_FLAVOR=gvisor
+ENV GRIST_EXPERIMENTAL_PLUGINS=1
 
 # apache2-utils is for htpasswd, used with dex
 RUN \
