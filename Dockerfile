@@ -34,7 +34,7 @@ FROM $BASE as merge
 # Enable sandboxing by default. It is generally important when sharing with
 # others. You may override it, e.g. "unsandboxed" uses no sandboxing but is
 # only OK if you trust all users fully.
-ENV GRIST_SANDBOX_FLAVOR=gvisor
+ENV GRIST_SANDBOX_FLAVOR=unsandboxed
 ENV GRIST_EXPERIMENTAL_PLUGINS=1
 
 # apache2-utils is for htpasswd, used with dex
